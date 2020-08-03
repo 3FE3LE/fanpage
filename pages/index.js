@@ -7,6 +7,8 @@ const Home = () => (
       <title>3FE 3LE</title>
       <link rel="icon" href="/favicon.ico" />
       <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:wght@700&display=swap" rel="stylesheet"/> 
+    <script src="//widget.manychat.com/526791781180406.js" async="async"></script>
+
     </Head>
     
     <main className="container">
@@ -18,6 +20,7 @@ const Home = () => (
       <p> Hola muchachos!! ¿como estan? como se pueden dar cuenta este es mi sitio web, el cual estare consntruyendo para mas adelante convertirlo en algo un poco mas interesante </p>
     </main>
     <footer>
+    <div className="mcwidget-embed" data-widget-id="12266129"></div>
     </footer>
 
     
