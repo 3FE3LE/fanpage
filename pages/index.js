@@ -8,6 +8,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
       <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:wght@700&display=swap" rel="stylesheet"/> 
     <script src="//widget.manychat.com/526791781180406.js" async="async"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
 
     </Head>
     
@@ -20,6 +21,7 @@ const Home = () => (
       <p> Hola muchachos!! ¿como estan? como se pueden dar cuenta este es mi sitio web, el cual estare consntruyendo para mas adelante convertirlo en algo un poco mas interesante </p>
     </main>
     <footer>
+    <div class="g-ytsubscribe" data-channelid="UCwn45BHeO1qu7PSHqM3H7SQ" data-layout="full" data-count="hidden"></div>
     <div className="mcwidget-embed" data-widget-id="12266129"></div>
     </footer>
 
@@ -37,7 +39,7 @@ const Home = () => (
         box-sizing: border-box;
       }
       .container {
-        margin: 5% 5%
+        margin: 3% 3%
       }
       a {
         text-decoration:none;
@@ -53,9 +55,11 @@ const Home = () => (
       
       }
       .name {
-        font-weight: bolder;
+        font-weight: bold;
         color: black;
-        font-size: 100px;
+
+        font-size: 150px;
+        font-family: 'MuseoModerno', cursive;
 
       }
     `}</style>
