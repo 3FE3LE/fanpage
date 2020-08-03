@@ -15,7 +15,7 @@ const Home = () => (
         Bienvenido a...
       </h1>
       <a className="name" target='_blank' href="https://youtube.com/c/3FE3LE">3FE 3LE</a>
-      <p> Hola muchachos!! ¿como estan? comoe se pueden dar cuenta este es mi sitio web el cual estare construyendo para mas adelante convertirlo en algoun poco mas interesante </p>
+      <p> Hola muchachos!! ¿como estan? como se pueden dar cuenta este es mi sitio web, el cual estare consntruyendo para mas adelante convertirlo en algo un poco mas interesante </p>
     </main>
     <footer>
     </footer>
