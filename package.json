@@ -16,7 +16,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
+    "@material-ui/core": "^4.11.0",
     "next": "^9.3.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
