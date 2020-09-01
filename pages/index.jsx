@@ -14,9 +14,12 @@ const Home = () => (
     <div className='w-full min-h-screen flex flex-col md:flex-row justify-center items-center'>
       <div className="w-full md:w-10/12 min-h-screen flex grid grid-rows-5 ">
         <div className="w-full h-full row-span-3 flex flex-col sm:flex-row">
-          <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner flex ">
-            <div className="h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
+          <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner ">
+            <div className="animate-pulse h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
               <h1 className="font-black text-white text-2xl">Mis Servicios</h1>
+            </div>
+            <div className="h-full flex justify-center">
+              <img src="/services.png" alt="me" className="object-cover object-top" />
             </div>
           </div>
           <div className="w-full sm:w-6/12 md:w-5/12 h-full grid grid-rows-1 sm:grid-rows-3">
@@ -68,24 +71,30 @@ const Home = () => (
                 </div>
               </div>
             </div>
-            <div className="h-16 mt-6 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-end justify-center">
-              <h1 className="font-black text-white text-2xl">Hobbies</h1>
+            <div className="h-full pt-12 flex animate-pulse justify-center items-center">
+              <div className="text-white text-2xl font-black uppercase">Muy pronto...</div>
             </div>
           </div>
           <div className="w-2/12 bg-white min-h-full p-2 shadow-inner flex items-center justify-center">
-            <h1 className="md:text-4xl lg:text-5xl p-4 text-red-600">You Tuber</h1>
+            <h1 className="md:text-4xl lg:text-5xl p-4 text-center text-red-600">You Tuber</h1>
           </div>
         </div>
       </div>
       <div className="w-full  md:w-2/12 min-h-screen flex grid grid-rows-5  shadow-md">
         <div className="w-full bg-white row-span-4 md:row-span-2 shadow-inner">
-          <div className="h-12 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
+          <div className="animate-pulse h-12 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
             <h1 className="font-black text-white text-2xl">Acerca de Mi</h1>
           </div>
+          <div className="h-full flex justify-center">
+            <img src="/about-me.svg" alt="me" className="object-cover" />
+          </div>
         </div>
-        <div className="w-full bg-black text-white  row-span-1 md:row-span-3 shadow-2xl flex flex-row sm:flex-col items-center p-4">
+        <div className="w-full bg-black text-white  row-span-1 md:row-span-3 shadow-2xl flex flex-row sm:flex-col justify-between items-center p-4">
           <h1>By 3FE3LE</h1>
-          <img src="" alt="" />
+          <img className="h-16 my-2 animate-pulse" src="/react.png" alt="" />
+          <img className="h-12 my-2 animate-pulse p-1 bg-gray-500" src="/next-js.svg" alt="" />
+          <img className="h-12 my-2 animate-pulse" src="/tailwind.svg" alt="" />
+          <img className="h-12 my-2 animate-pulse" src="/material-ui.svg" alt="" />
         </div>
       </div>
     </div>
