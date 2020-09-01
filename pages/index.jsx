@@ -16,19 +16,19 @@ const Home = () => (
         <div className="w-full h-full row-span-3 flex flex-col sm:flex-row">
           <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner flex items-center"></div>
           <div className="w-full sm:w-6/12 md:w-5/12 h-full grid grid-rows-1 sm:grid-rows-3">
-            <div className="w-full h-full bg-black p-4 row-span-1 sm:row-span-2 flex flex-col sm:flex-row items-center justify-between text-white shadow-2xl ">
+            <div className="w-full w-auto sm:h-full bg-black px-2 py-4 sm:p-4 row-span-1 sm:row-span-2 flex flex-row items-center justify-between text-white shadow-2xl ">
               <h1 className="text-2xl sm:text-4xl px-2 ">
                 Bienvenido a...
-            </h1>
-              <a className="museo text-4xl md:text-4xl p-2 text-center" target='_blank' href="https://youtube.com/c/3FE3LE">3FE 3LE</a>
+              </h1>
+              <a className="museo text-4xl md:text-4xl px-2 text-center" target='_blank' href="https://youtube.com/c/3FE3LE">3FE 3LE</a>
             </div>
             <div className="w-full h-full bg-gradient-to-r from-teal-400 to-blue-500 text-white row-span-1 p-2 flex justify-center items-center shadow-inner">
-              <h1 className="p-2 m-2 museo">Digital</h1>
-              <img src="/youtube-logo.png" alt="youtube" className="h-16" />
-              <h1 className="p-2 m-2 ">Creator</h1>
+              <h1 className="p-2 m-2 text-2xl museo">Digital</h1>
+              <img src="/youtube-logo.png" alt="youtube" className="h-10 sm:h-16" />
+              <h1 className="p-2 m-2 text-2xl ">Creator</h1>
             </div>
           </div>
-          <div className="w-full sm:w-6/12 text-md sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl md:w-5/12 bg-gray-100 min-h-full p-4 shadow-inner">
+          <div className="w-full sm:w-6/12 text-md sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl md:w-5/12 bg-gray-100 h-full p-4 shadow-inner">
             <p> Hola muchachos!! ¿como están? como se pueden dar cuenta este es mi sitio web, el cual estaré construyendo para mas adelante convertirlo en algo un poco mas interesante </p>
           </div>
         </div>
