@@ -14,7 +14,11 @@ const Home = () => (
     <div className='w-full min-h-screen flex flex-col md:flex-row justify-center items-center'>
       <div className="w-full md:w-10/12 min-h-screen flex grid grid-rows-5 ">
         <div className="w-full h-full row-span-3 flex flex-col sm:flex-row">
-          <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner flex items-center"></div>
+          <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner flex ">
+            <div className="h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
+              <h1 className="font-black text-white text-2xl">Mis Servicios</h1>
+            </div>
+          </div>
           <div className="w-full sm:w-6/12 md:w-5/12 h-full grid grid-rows-1 sm:grid-rows-3">
             <div className="w-full w-auto sm:h-full bg-black px-2 py-4 sm:p-4 row-span-1 sm:row-span-2 flex flex-row items-center justify-between text-white shadow-2xl ">
               <h1 className="text-2xl sm:text-4xl px-2 ">
@@ -28,7 +32,7 @@ const Home = () => (
               <h1 className="p-2 m-2 text-2xl ">Creator</h1>
             </div>
           </div>
-          <div className="w-full sm:w-6/12 text-md sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl md:w-5/12 bg-gray-100 h-full p-4 shadow-inner">
+          <div className="w-full sm:w-6/12 text-lg lg:text-2xl xl:text-3xl md:w-5/12 bg-gray-100 h-full p-4 shadow-inner">
             <p> Hola muchachos!! ¿como están? como se pueden dar cuenta este es mi sitio web, el cual estaré construyendo para mas adelante convertirlo en algo un poco mas interesante </p>
           </div>
         </div>
@@ -64,6 +68,9 @@ const Home = () => (
                 </div>
               </div>
             </div>
+            <div className="h-16 mt-6 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-end justify-center">
+              <h1 className="font-black text-white text-2xl">Hobbies</h1>
+            </div>
           </div>
           <div className="w-2/12 bg-white min-h-full p-2 shadow-inner flex items-center justify-center">
             <h1 className="md:text-4xl lg:text-5xl p-4 text-red-600">You Tuber</h1>
@@ -71,8 +78,12 @@ const Home = () => (
         </div>
       </div>
       <div className="w-full  md:w-2/12 min-h-screen flex grid grid-rows-5  shadow-md">
-        <div className="w-full bg-white row-span-4 md:row-span-2 shadow-inner"></div>
-        <div className="w-full bg-black text-white  row-span-1 md:row-span-3 shadow-2xl flex items-center p-4">
+        <div className="w-full bg-white row-span-4 md:row-span-2 shadow-inner">
+          <div className="h-12 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
+            <h1 className="font-black text-white text-2xl">Acerca de Mi</h1>
+          </div>
+        </div>
+        <div className="w-full bg-black text-white  row-span-1 md:row-span-3 shadow-2xl flex flex-row sm:flex-col items-center p-4">
           <h1>By 3FE3LE</h1>
           <img src="" alt="" />
         </div>
