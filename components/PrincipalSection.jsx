@@ -52,7 +52,7 @@ const PrincipalSection = () => {
           </div>
         </div>
         <div className="w-full  md:w-2/12 min-h-screen grid grid-rows-5  shadow-md">
-          <div className="w-full bg-white row-span-4 md:row-span-2 shadow-inner">
+          <div className="w-full bg-white row-span-2 md:row-span-2 shadow-inner">
             <div className="animate-pulse h-12 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center">
               <Link href="/about">
                 <a >
@@ -63,6 +63,20 @@ const PrincipalSection = () => {
             <div className="h-full flex justify-center">
               <img src="/about-me.svg" alt="me" className="object-cover" />
             </div>
+            
+          </div>
+          <div className="w-full bg-white row-span-2 md:hidden shadow-inner">
+          <div className="animate-pulse h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
+                <Link href="/my-services">
+                  <a>
+                    <h1 className=" font-black text-white text-2xl">Mis Servicios</h1>
+                  </a>
+                </Link>
+              </div>
+              <div className="h-full flex justify-center">
+                <img src="/services.png" alt="me" className="object-cover object-top" />
+              </div>
+            
           </div>
           <div className="w-full bg-black text-white  row-span-1 md:row-span-3 shadow-2xl flex flex-wrap justify-between items-center p-4">
             <Footer />
