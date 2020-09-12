@@ -6,9 +6,11 @@ const NavBar = () => {
 
   const router = useRouter();
 
+  const path = router.pathname;
+
   let color
 
-  switch (router.pathname) {
+  switch (path) {
     case '/about':
       color = 'orange'
       break;
@@ -30,27 +32,27 @@ const NavBar = () => {
     {
       name: "Inicio",
       path: "/",
-      color: `bg-${color}-100`,
+      color: `bg-gradient-to-tr from-transparent to-${color}-100`
     },
     {
       name: "Acerca de mi",
       path: "/about",
-      color: `bg-${color}-200`,
+      color: `bg-gradient-to-tr from-${color}-100 to-${color}-200`
     },
     {
       name: "Mis servicios",
       path: "/my-services",
-      color: `bg-${color}-300`,
+      color: `bg-gradient-to-tr from-${color}-200 to-${color}-300`
     },
     {
       name: "Developer",
       path: "/developer",
-      color: `bg-${color}-400`,
+      color: `bg-gradient-to-tr from-${color}-300 to-${color}-400`
     },
     {
       name: "Youtuber",
       path: "/youtuber",
-      color: `bg-${color}-500`,
+      color: `bg-gradient-to-tr from-${color}-400 to-${color}-500`
     }
     // {
     //   name:"",
@@ -59,14 +61,14 @@ const NavBar = () => {
     // }
   ]
 
-  const navClass = "flex items-center justify-center w-full h-full text-center text-xs font-black hover:animate- "
+  const navClass = "flex items-center justify-center w-full h-full text-center text-xs sm:text-lg md:text-xl font-black"
 
   return (
     <div className="fixed top-0 right-0 w-full md:w-7/12 lg:w-5/12">
       <nav className={`shadow-xl bg-gray-100 w-full h-24 flex items-center text-${color}-900`} >
         {navItems.map(item => (
           <Link key={item.name} href={item.path}>
-            <a className={`${navClass} ${item.path === router.pathname ? 'shadow-inner' : ''} ${item.color}`}>
+            <a className={`${navClass} ${item.path == path ? 'shadow-inner' : ''} ${item.color}`}>
               {item.name}
             </a>
           </Link>)
