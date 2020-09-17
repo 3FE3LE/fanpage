@@ -12,7 +12,6 @@ const Home = () => (
       <script src="https://apis.google.com/js/platform.js"></script>
     </Head>
     <PrincipalSection/>
-    {/* <SecondSection/> */}
   </>
 )
 export default Home

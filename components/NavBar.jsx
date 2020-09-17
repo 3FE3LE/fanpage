@@ -65,7 +65,7 @@ const NavBar = () => {
 
   return (
     <div className="fixed top-0 right-0 w-full md:w-7/12 lg:w-5/12">
-      <nav className={`shadow-xl bg-gray-100 w-full h-24 flex items-center text-${color}-900`} >
+      <nav className={`shadow-xl bg-gray-100 w-full h-20 flex items-center text-${color}-900`} >
         {navItems.map(item => (
           <Link key={item.name} href={item.path}>
             <a className={`${navClass} ${item.path == path ? 'shadow-inner' : ''} ${item.color}`}>
