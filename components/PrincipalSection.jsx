@@ -34,7 +34,7 @@ const PrincipalSection = () => {
                 <h1 className=" mx-4 text-2xl">Creator</h1>
               </div>
             </div>
-            <div className="w-full sm:w-6/12 md:w-5/12 h-auto sm:h-full flex items-center sm:text-md  md:text-lg lg:text-xl xl:text-2xl uppercase font-black  bg-gray-100 p-4 text-center sm:text-right shadow-inner">
+            <div className="w-full sm:w-6/12 md:w-5/12 h-auto sm:h-full flex items-center sm:text-md  md:text-lg lg:text-xl xl:text-2xl uppercase font-black  bg-gray-100 sm:pl-5 p-4 text-center sm:text-right shadow-inner">
               <p> Hola muchachos!!. <br/> ¡¿como están?! <br/> como se pueden dar cuenta este es mi sitio web, el cual estaré construyendo para mas adelante convertirlo en algo un poco mas interesante </p>
             </div>
           </div>
