@@ -5,6 +5,7 @@ import SocialMediaLinks from './SocialMediaLinks'
 import About from './content/About'
 import Youtuber from './content/Youtuber'
 import Developer from './content/Developer'
+import MyServices from './content/MyServices'
 
 const PrincipalSection = () => {
   return (
@@ -12,14 +13,7 @@ const PrincipalSection = () => {
       <section className='w-full h-screen min-h-full flex flex-wrap justify-center items-center'>
         <div className="w-full  md:w-10/12 min-h-screen grid grid-rows-5 ">
           <div className="w-full h-full row-span-3 flex flex-wrap">
-            <div className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full shadow-inner ">
-              <div className="animate-pulse h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
-                <h1 className="hidden md:inline font-black text-white text-2xl">Mis Servicios</h1>
-              </div>
-              <div className="h-full flex justify-center">
-                <img src="/services.png" alt="me" className="object-cover object-top" />
-              </div>
-            </div>
+           <MyServices view={true}/>
             <div className="w-full sm:w-6/12 md:w-5/12 h-auto sm:h-full grid grid-rows-2 sm:grid-rows-3">
               <div className="relative w-full sm:h-full row-span-1 sm:row-span-2 bg-black px-2 py-2 sm:p-4 flex-wrap flex justify-center  text-white shadow-2xl ">
                 <div className="flex items-center justify-between w-full">
@@ -35,7 +29,7 @@ const PrincipalSection = () => {
               </div>
             </div>
             <div className="w-full sm:w-6/12 md:w-5/12 h-auto sm:h-full flex items-center sm:text-md  md:text-lg lg:text-xl xl:text-2xl uppercase font-black  bg-gray-100 sm:pl-5 p-4 text-center sm:text-right shadow-inner">
-              <p> Hola muchachos!!. <br/> ¡¿como están?! <br/> como se pueden dar cuenta este es mi sitio web, el cual estaré construyendo para mas adelante convertirlo en algo un poco mas interesante </p>
+              <p> Hola muchachos!!. <br /> ¡¿como están?! <br /> como se pueden dar cuenta este es mi sitio web, el cual estaré construyendo para mas adelante convertirlo en algo un poco mas interesante </p>
             </div>
           </div>
           <div className="w-full h-full row-span-2 flex shadow-inner">
@@ -51,19 +45,7 @@ const PrincipalSection = () => {
         </div>
         <div className="w-full  md:w-2/12 min-h-screen z-50 grid grid-rows-5  ">
           <About />
-          <div className="w-full bg-white row-span-2  md:hidden shadow-inner">
-            <div className="animate-pulse h-12 w-full   bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
-              <Link href="/my-services">
-                <a>
-                  <h1 className=" font-black text-white text-2xl">Mis Servicios</h1>
-                </a>
-              </Link>
-            </div>
-            <div className="h-full flex justify-center">
-              <img src="/services.png" alt="me" className="object-cover object-top" />
-            </div>
-
-          </div>
+          <MyServices view={false}/>
           <div className="w-full z-0 bg-black text-white  row-span-1 md:row-span-3 flex flex-wrap justify-center items-center p-4">
             <Footer />
           </div>
