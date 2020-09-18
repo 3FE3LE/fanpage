@@ -37,8 +37,8 @@ const MyServices = ({ view }) => {
             <Slide direction="down" in={show} unmountOnExit mountOnEnter timeout={{ enter: 1000, exit: 1000 }}>
               <div className="w-full h-full -z-30 shadow-md bg-gradient-to-br from-gray-500 to-transparent rounded-b-lg px-8 py-4">
                 <div className="md:w-5/12">
-                  <h1 className="museo text-gray-100 text-6xl sm:text-8xl" >Mis</h1>
-                  <h5 className="museo text-white -mt-16 sm:-mt-24 text-8xl sm:text-12xl text-right" >Servicios</h5>
+                  <h1 className="museo text-gray-300 text-6xl sm:text-8xl" >Mis</h1>
+                  <h5 className="museo text-white -mt-16 sm:-mt-24  text-6xl sm:text-12xl" >Servicios</h5>
                 </div>
                 <p className="text-white sm:w-8/12 font-semibold sm:text-2xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores temporibus mollitia praesentium repudiandae neque dolores! Reiciendis eos quidem adipisci, consequatur quod ipsam culpa, rem ad tempora ipsa debitis nostrum?</p>
               </div>
