@@ -17,7 +17,7 @@ const MyServices = ({ view }) => {
           <h1 className="museo hidden md:inline font-black text-white text-2xl">Mis Servicios</h1>
         </div>
         <div className="h-full flex justify-center">
-          <img src="/services.png" alt="me" className="object-cover object-top" />
+          <img src="/services.svg" alt="me" className="object-cover object-top" />
         </div>
       </div> :
         <div onClick={() => handleClick()} className="w-full bg-white row-span-2  md:hidden ">
