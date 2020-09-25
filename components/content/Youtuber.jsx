@@ -26,7 +26,7 @@ const Youtuber = () => {
                   <h1 className="text-white text-6xl sm:text-8xl" >You</h1>
                   <h5 className="text-white -mt-16 sm:-mt-24 text-8xl sm:text-12xl text-right" >Tuber.</h5>
                 </div>
-                <p className="text-red-100 sm:w-8/12 font-semibold sm:text-2xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores temporibus mollitia praesentium repudiandae neque dolores! Reiciendis eos quidem adipisci, consequatur quod ipsam culpa, rem ad tempora ipsa debitis nostrum?</p>
+                <p className="text-red-100 sm:w-8/12 font-semibold sm:text-2xl" >Llevo años en la busca de un contenido fresco, personajes que inspiraban y te hacian llegar un mensaje con el tiempo se han ido. Ahora es mi turno</p>
               </div>
             </Slide>
             <img src="/youtuber.svg" alt="me" className="bg-opacity-0 w-8/12 fixed right-0 -z-10 bottom-1/12 " />

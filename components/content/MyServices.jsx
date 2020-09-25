@@ -12,14 +12,15 @@ const MyServices = ({ view }) => {
   return (
 
     <>
-      {view === true ? <div onClick={() => handleClick()} className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full sm:transition duration-500 ease-in-out transform  cursor-pointer sm:hover:translate-y-2 sm:hover:translate-x-1 sm:hover:scale-105">
-        <div className="animate-pulse h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
-          <h1 className="museo hidden md:inline font-black text-white text-2xl">Mis Servicios</h1>
-        </div>
-        <div className="h-full flex justify-center">
-          <img src="/services.svg" alt="me" className="object-cover object-top" />
-        </div>
-      </div> :
+      {view === true ?
+        <div onClick={() => handleClick()} className="w-0 h-0 md:w-2/12 bg-gray-100 md:h-full sm:transition duration-500 ease-in-out transform  cursor-pointer sm:hover:translate-y-2 sm:hover:translate-x-1 sm:hover:scale-105">
+          <div className="animate-pulse h-12 w-full bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
+            <h1 className="museo hidden md:inline font-black text-white text-2xl">Mis Servicios</h1>
+          </div>
+          <div className="h-full flex justify-center">
+            <img src="/services.svg" alt="me" className="object-cover object-top" />
+          </div>
+        </div> :
         <div onClick={() => handleClick()} className="w-full bg-white row-span-2  md:hidden ">
           <div className="animate-pulse h-12 w-full   bg-gradient-to-r from-gray-500 via-gray-700 to-gray-600 flex items-center justify-center">
             <h1 className="museo font-black text-white text-2xl">Mis Servicios</h1>
