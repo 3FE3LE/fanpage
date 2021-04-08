@@ -5,10 +5,10 @@
 
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  html {
+  body {
     width: 100%;
     height: 100vh;
   }
@@ -20,18 +20,120 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-.museo {
-  font-family: "MuseoModerno", cursive;
+button {
+  border: 0;
 }
 
-.lobster{
-  font-family: "Lobster", cursive;
+.content {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    .name {
+      h1 {
+        width: 100%;
+        font-size: rem(80);
+        color: c.$eerie-black;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        @include museo;
+        span {
+          font-size: rem(24);
+          color: c.$onyx;
+          position: absolute;
+          top: rem(100);
+          @include vertical;
+          @include text-flicker-in-glow;
+        }
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 2rem;
+    position: absolute;
+    z-index: 10;
+
+    &--logo {
+      width: 4rem;
+      top: 2rem;
+      left: 2rem;
+      box-shadow: 1rem 1rem 2rem c.$gainsboro;
+      @include for-phone-only {
+        width: 3rem;
+      }
+    }
+
+    &--text {
+      height: 4rem;
+      font-size: rem(18);
+      font-weight: bold;
+      background: white;
+      padding: 0 1.5rem;
+      color: c.$dim-gray;
+      @include for-phone-only {
+        height: 3rem;
+        font-size: rem(14);
+        padding: 0 1rem;
+      }
+      &:hover{
+        background: black;
+        color: c.$gainsboro;
+        transition: ease-in-out 250ms;
+      }
+      &:focus{
+        background: black;
+        color: c.$gainsboro;
+        transition: ease-in-out 250ms;z\z
+      }
+    }
+
+    &--text--about {
+      bottom: 2rem;
+      left: 2rem;
+      box-shadow: 1rem -1rem 2rem c.$gainsboro;
+    }
+
+    &--text--contact {
+      bottom: 2rem;
+      right: 2rem;
+      box-shadow: -1rem -1rem 2rem c.$gainsboro;
+    }
+
+    &--text--developer {
+      top: 2rem;
+      right: 2rem;
+      box-shadow: -1rem 1rem 2rem c.$gainsboro;
+    }
+  }
+  // .content__h1{
+  // }
+
+  // .content__h2{
+  // }
+
+  &__h3 {
+    width: 100%;
+    text-align: center;
+    font-size: rem(24);
+    color: c.$rich-black-fogra-39;
+  }
 }
