@@ -35,33 +35,75 @@ button {
 .content {
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 2rem;
+  // padding: 2rem;
   position: relative;
   box-sizing: border-box;
+  @include for-phone-only {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  &__info {
+    &--with-content {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      transition: cubic-bezier(.77,0,.18,1) 1s width;
+      background: black;
+      color: white;
+      @include for-phone-only {
+        height: 100vh;
+        transition: cubic-bezier(.77,0,.18,1) 1s height;
+      }
+    }
+    &--without-content {
+      background: black;
+      transition: cubic-bezier(.77,0,.18,1) 1s width;
+      width: 0;
+      @include for-phone-only {
+        height: 0;
+        transition: cubic-bezier(.77,0,.18,1) 1s height;
+      }
+    }
+  }
 
-  &__name {
-    display: flex;
-    justify-content: center;
-    .name {
-      h1 {
-        width: 100%;
-        font-size: rem(80);
-        color: c.$eerie-black;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        @include museo;
-        span {
-          font-size: rem(24);
-          color: c.$onyx;
-          position: absolute;
-          top: rem(100);
-          @include vertical;
-          @include text-flicker-in-glow;
+  &__title {
+    min-width: 400px;
+    @include for-phone-only {
+      padding-top: 200px;
+      margin-bottom: -30px;
+      min-width: 100%;
+    }
+    // display: flex;
+    &--h3 {
+      width: 100%;
+      text-align: center;
+      font-size: rem(24);
+      color: c.$rich-black-fogra-39;
+    }
+    &--name {
+      display: flex;
+      justify-content: center;
+      .name {
+        h1 {
+          width: 100%;
+          font-size: rem(80);
+          color: c.$eerie-black;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          @include museo;
+          span {
+            font-size: rem(24);
+            color: c.$onyx;
+            position: absolute;
+            top: rem(100);
+            @include vertical;
+            @include text-flicker-in-glow;
+          }
         }
       }
     }
@@ -69,13 +111,14 @@ button {
 
   &__button {
     border-radius: 2rem;
-    position: absolute;
+    position: fixed;
     z-index: 10;
 
     &--logo {
       width: 4rem;
       top: 2rem;
       left: 2rem;
+      z-index: 10;
       box-shadow: 1rem 1rem 2rem c.$gainsboro;
       @include for-phone-only {
         width: 3rem;
@@ -94,15 +137,15 @@ button {
         font-size: rem(14);
         padding: 0 1rem;
       }
-      &:hover{
+      &:hover {
         background: black;
         color: c.$gainsboro;
         transition: ease-in-out 250ms;
       }
-      &:focus{
+      &:focus {
         background: black;
         color: c.$gainsboro;
-        transition: ease-in-out 250ms;z\z
+        transition: ease-in-out 250ms;
       }
     }
 
@@ -129,11 +172,4 @@ button {
 
   // .content__h2{
   // }
-
-  &__h3 {
-    width: 100%;
-    text-align: center;
-    font-size: rem(24);
-    color: c.$rich-black-fogra-39;
-  }
 }
